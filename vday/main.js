@@ -93,6 +93,12 @@ function showNextModel(answer) {
     document.getElementById('ask').style.fontSize = '2em';
     document.getElementById('noButton').style.padding = `50px`;
     document.getElementById('yesButton').style.padding = `50px`;
+    if (document.getElementById('noButton').innerText === 'yes') {
+      document.getElementById('noButton').innerText = 'yes';
+    }
+    else if (document.getElementById('noButton').innerText !== 'no') {
+      document.getElementById('noButton').innerText = 'no';
+    }
     if (heart) {
       scene.remove(heart);
     }
