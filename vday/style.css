@@ -52,13 +52,13 @@ canvas {
 
 #noButton:hover {
   cursor: pointer;
-  background-color: rgb(51, 51, 52);
+  background-color: rgb(51, 51, 52, 0.399);
   transition-delay: 0.5ms;
 }
 
 #yesButton:hover {
   cursor: pointer;
-  background-color: rgb(51, 51, 52);
+  background-color: rgb(51, 51, 52, 0.399);
   transition-delay: 0.5ms;
 }
 
