@@ -49,7 +49,7 @@ function loadNextModel() {
 
       scene.add(heart);
       const distance = 10; // Adjust the distance as needed
-      camera.position.set(0, 0, distance);
+      //camera.position.set(0, 0, distance);
       controls.target.set(heart.position.x, heart.position.y, heart.position.z);
       controls.update();
     });
@@ -73,7 +73,7 @@ function showNextModel(answer) {
     }
 
     // Replace "No" text with the next phrase
-    const phrases = ['yes', 'what ?', 'haha funny', 'ok not funny...', 'try again', "that's not nice", 'stop joking', 'wrong answer', 'ur making me upset', 'is something wrong with me ?', 'am i not good enough ?', 'love me'];
+    const phrases = ['yes', 'what ?', 'haha funny', 'ok not funny...', 'try again', "that's not nice", 'wrong answer', "you're making me upset", "don't play with my heart", 'is something wrong with me ?', 'am i not good enough ?', 'love me'];
     currentPhrase = (currentPhrase + 1);
     document.getElementById('noButton').innerText = phrases[currentPhrase];
     if (currentPhrase >= phrases.length) {
@@ -115,7 +115,7 @@ function showNextModel(answer) {
         console.log('Heart position:', heart.position);
         scene.add(heart);
 
-        const distance = 10; // Adjust the distance as needed
+        const distance = 10;
         camera.position.set(0, 0, distance);
         controls.target.set(heart.position.x, heart.position.y, heart.position.z);
         controls.update();
@@ -144,7 +144,7 @@ const animate = function () {
 
   // Rotate the heart around the y-axis
   if (heart) {
-    heart.rotation.y += 0.005; // Adjust the rotation speed as needed
+    heart.rotation.y += 0.005;
   }
 
   renderer.render(scene, camera);
